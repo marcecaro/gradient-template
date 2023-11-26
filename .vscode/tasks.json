@@ -15,13 +15,7 @@
                 },
             "problemMatcher": []
         },
-        {
-            "label": "Build Docker Image",
-            "type": "shell",
-            "command": "make image ENV=dev",
-            "isBackground": false
-        },
-
+        
         {
             "label": "NBDEV-EXPORT",
             "type": "shell",

@@ -4,8 +4,6 @@
     "workbench.colorTheme": "Default Dark+",
     "jupyter.useDefaultConfigForJupyter": true,
 
-
-
     "statusbar_command.commands": [
         {
             "text": "Docker Prune",
