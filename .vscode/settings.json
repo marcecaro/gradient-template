@@ -1,7 +1,7 @@
 {
     "jupyter.notebookFileRoot": "${workspaceFolder}/source_scripts",
 
-    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorTheme": "Default Dark Modern",
     "jupyter.useDefaultConfigForJupyter": true,
 
     "statusbar_command.commands": [
