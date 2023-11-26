@@ -41,6 +41,8 @@ d = { 'settings': {'doc_baseurl': '""', 'doc_host': '""', 'git_url': '""', 'lib_
                                                                                                              'source_scripts/project/models/bert/model.py'),
                                                           'source_scripts.project.models.bert.model.get_attn_pad_mask': ( 'models/BERT/bert-reimp.html#get_attn_pad_mask',
                                                                                                                           'source_scripts/project/models/bert/model.py')},
+            'source_scripts.project.models.bert.training': { 'source_scripts.project.models.bert.training.manual_seed_all': ( 'models/BERT/bert-training.html#manual_seed_all',
+                                                                                                                              'source_scripts/project/models/bert/training.py')},
             'source_scripts.project.utils.plot': { 'source_scripts.project.utils.plot.LivePlot': ( 'utils/plot_utils.html#liveplot',
                                                                                                    'source_scripts/project/utils/plot.py'),
                                                    'source_scripts.project.utils.plot.LivePlot.__init__': ( 'utils/plot_utils.html#liveplot.__init__',
