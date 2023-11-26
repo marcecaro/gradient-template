@@ -1,0 +1,34 @@
+#fail_fast: true
+
+repos:
+    -   repo: https://github.com/fastai/nbdev
+        rev: 2.2.10
+        hooks:
+            - id: nbdev_clean
+            - id: nbdev_export
+    -   repo: https://github.com/nbQA-dev/nbQA
+        rev: 1.5.3
+        hooks:
+            - id: nbqa-mypy
+              args: ["--ignore-missing-imports", "--check-untyped-defs"]
+              additional_dependencies: ["mypy", "types-toml", "types-requests"]
+            - id: nbqa-black
+    -   repo: https://github.com/pre-commit/pre-commit-hooks
+        rev: v2.4.0
+        hooks:
+            - id: detect-aws-credentials
+              args: [--allow-missing-credentials]
+            - id: check-executables-have-shebangs
+            - id: trailing-whitespace
+              args: [--markdown-linebreak-ext=md]
+              exclude: ^source_scripts/
+            - id: check-ast
+            - id: check-added-large-files
+            - id: check-json
+              exclude: ^.vscode/
+            - id: check-toml
+            - id: check-yaml
+            - id: end-of-file-fixer
+              exclude: ^source_scripts/
+            - id: mixed-line-ending
+              exclude: ^source_scripts/
