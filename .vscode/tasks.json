@@ -1,0 +1,51 @@
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "auto_nbdev_export",
+            "type": "shell",
+            "command": ".vscode/watch_notebooks.sh",
+            "isBackground": true,
+            "presentation": {
+                "reveal": "always"
+                },
+            "runOptions": {
+                    "runOn": "folderOpen"
+                },
+            "problemMatcher": []
+        },
+        {
+            "label": "Build Docker Image",
+            "type": "shell",
+            "command": "make image ENV=dev",
+            "isBackground": false
+        },
+
+        {
+            "label": "NBDEV-EXPORT",
+            "type": "shell",
+            "command": "poetry run nbdev_export",
+            "isBackground": true
+        },
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "poetry install",
+            "isBackground": true
+        },
+        {
+            "label": "Docker Prune",
+            "type": "shell",
+            "command": "docker system prune",
+            "isBackground": true
+        },
+        {
+            "label": "Kill all Kernels",
+            "type": "shell",
+            "command": "pkill -f ipykernel",
+            "isBackground": true
+        },
+
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "jupyter.notebookFileRoot": "${workspaceFolder}/source_scripts",
+
+    "workbench.colorTheme": "Default Dark+",
+    "jupyter.useDefaultConfigForJupyter": true,
+
+
+
+    "statusbar_command.commands": [
+        {
+            "text": "Docker Prune",
+            "tooltip": "Docker Prune",
+            "alignment": "left",
+            "command": "workbench.action.tasks.runTask",
+            "arguments": ["Docker Prune"]
+        },
+        {
+            "text": "NBDEV-EXPORT",
+            "tooltip": "NBDEV-EXPORT",
+            "alignment": "left",
+            "command": "workbench.action.tasks.runTask",
+            "arguments": ["NBDEV-EXPORT"]
+        },
+        {
+            "text": "AUTO-NBDEV-EXPORT",
+            "tooltip": "AUTO-NBDEV-EXPORT",
+            "alignment": "left",
+            "command": "workbench.action.tasks.runTask",
+            "arguments": ["auto_nbdev_export"]
+        },
+        {
+            "text": "Kill Kernels",
+            "tooltip": "Kill Kernels",
+            "alignment": "left",
+            "command": "workbench.action.tasks.runTask",
+            "arguments": ["Kill all Kernels"]
+        }
+
+
+
+    ],
+    "notebook.lineNumbers": "on",
+    "notebook.formatOnSave.enabled": true,
+    "github.copilot.chat.localeOverride": "en",
+    "black-formatter.args": [
+        "--line-length=250"
+    ]
+}
